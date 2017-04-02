@@ -1,11 +1,14 @@
 /*ç¬¬ä¸€éƒ¨åˆ†*/
 .sec-1 {
-    background: url("../images/bg-1_01.jpg") no-repeat;
+    background: url("../images/bg-1.jpg") no-repeat;
     background-size: 100% 100%;
     width: 100%;
     height:17.66rem ;
     position: relative;
     overflow: hidden;
+}
+.sec-1 #anchorTop {
+    position: absolute;
 }
 .sec-1 .dragon {
     width: 6.41rem;
@@ -41,6 +44,8 @@
     top: 8.95rem;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: .2rem;
+    box-shadow: inset 0 -0.1rem #016f1f, .05rem 0.1rem #037c3f;
 }
     /*第一部分的抽奖模块--外面--小白框部分*/
 .sec-1 .chouJiang-out .whiteDiv {
@@ -197,3 +202,99 @@
 .sec-1 .circle-bottom{
    left: .56rem;
 }
+/*第二部分*/
+.sec-2 {
+    background: url("../images/bg-2.png") no-repeat;
+    width: 100%;
+    height: 19.27rem;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: -.05rem;
+}
+    /*第二部分--获奖名单*/
+.sec-2 .winner {
+    width: 6.55rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .28rem;
+    color: #0b6f72;
+    top: 1.25rem;
+    padding-left: 0.11rem;
+}
+.sec-2 .winner .winnerName {
+    margin-bottom: .27rem;
+}
+.sec-2 .winner .winnerName span:first-child {
+    margin-right: .64rem;
+}
+.sec-2 .winner .winnerName div {
+    float: right;
+    width: 2.1rem;
+}
+.sec-2 .winner .winnerName:nth-child(2n) div i {
+    float: left;
+    background: url("../images/icon.png") 0 -.3rem no-repeat;
+    width: .43rem;
+    height: .39rem;
+    overflow: hidden;
+    margin-top: -0.16rem;
+}
+.sec-2 .winner .winnerName:nth-child(2n+1) div i {
+    float: left;
+    background: url("../images/icon.png") 0 .1rem no-repeat;
+    width: .43rem;
+    height: .39rem;
+    overflow: hidden;
+    margin-top: -0.13rem;
+}
+.sec-2 .winner .winnerName div span {
+    font-weight: bold;
+    margin-left: .2rem;
+}
+    /*第二部分--返回顶部按钮*/
+.sec-2 .backTop {
+    width: 2.3rem;
+    height: .65rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 2.65rem;
+}
+.sec-2 .backTop::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: '';
+    width: .01rem;
+    height: .01rem;
+    border-radius: 50%;
+    background: yellow;
+    box-shadow: 0 0 1rem 0.4rem yellow;
+    opacity: 0;
+}
+.sec-2 .backTop:hover:before {
+    opacity: 1;
+}
+.sec-2 .backTop::after {
+    position: absolute;
+    content: '';
+    background: url("../images/bottom_btn.png") no-repeat;
+    width: .5rem;
+    height: .29rem;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bottomBtn .8s steps(1) infinite;
+}
+@keyframes bottomBtn {
+    from {
+        bottom: -.3rem;
+    }
+    50% {
+        bottom: -.2rem;
+    }
+    to {
+        bottom: -.3rem;
+    }
+}
+
