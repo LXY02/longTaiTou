@@ -1,0 +1,199 @@
+/*ç¬¬ä¸€éƒ¨åˆ†*/
+.sec-1 {
+    background: url("../images/bg-1_01.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height:17.66rem ;
+    position: relative;
+    overflow: hidden;
+}
+.sec-1 .dragon {
+    width: 6.41rem;
+    height:4.21rem;
+    position: absolute;
+    animation: dragonMove 2s linear forwards infinite;
+}
+@keyframes dragonMove {
+    from {
+        right: 0.2rem;
+        top: -0.46rem;
+    }
+    33% {
+        right: -0.2rem;
+        top: -0.15rem;
+    }
+    66% {
+        right: 0.1rem;
+        top: 0;
+    }
+    to {
+        right: 0.2rem;
+        top: -0.46rem;
+    }
+}
+    /*第一部分的抽奖模块--外面部分*/
+.sec-1 .chouJiang-out {
+    background: url("../images/抽奖背景.png") no-repeat;
+    background-size: 6.97rem 6.47rem;
+    width: 6.97rem;
+    height: 6.47rem;
+    position: absolute;
+    top: 8.95rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    /*第一部分的抽奖模块--外面--小白框部分*/
+.sec-1 .chouJiang-out .whiteDiv {
+    position: absolute;
+    top: 4.7rem;
+    left: 3.55rem;
+    width: 2.03rem;
+    height: 1.41rem;
+    border-radius: 0.2rem;
+    background: rgba(252, 252, 252, 0.65);
+    z-index: 100;
+    animation: whiteMove 5s linear infinite ;
+}
+@keyframes whiteMove {
+    from {
+        top: .33rem;
+        left: .4rem;
+    }
+    25% {
+        top: .33rem;
+        left: 4.55rem;
+    }
+    50% {
+        top: 4.7rem;
+        left: 4.55rem;
+    }
+    75% {
+        top: 4.7rem;
+        left: .4rem;
+    }
+    to {
+        top: .33rem;
+        left: .4rem;
+    }
+}
+
+    /*第一部分的抽奖模块--里面部分*/
+.sec-1 .chouJiang-inner {
+    width: 6.3rem;
+    height: 5.9rem;
+    background: #037c3f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0.2rem;
+}
+    /*第一部分的抽奖模块--里面--选择部分*/
+.sec-1 .chouJiang-inner .choose {
+    float: left;
+    width: 2.03rem;
+    height: 1.41rem;
+    margin: 0 0 .051rem .054rem;
+    border-radius: 0.2rem;
+    background: #ecffda;
+    box-shadow: inset 0 -0.14rem #93e8a4;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    text-align: center;
+}
+.sec-1 .chouJiang-inner .choose:nth-child(1),
+.sec-1 .chouJiang-inner .choose:nth-child(2),
+.sec-1 .chouJiang-inner .choose:nth-child(3){
+    margin-top: .051rem;
+}
+.sec-1 .chouJiang-inner .choose::before {
+    position: absolute;
+    content: '节日专属';
+    width: 2rem;
+    height: .35rem;
+    font-size: .18rem;
+    line-height: .35rem;
+    text-align: center;
+    color: #ffe800;
+    background: #04ab57;
+    left: 35%;
+    top: 9%;
+    transform: rotate(45deg);
+}
+.sec-1 .chouJiang-inner .choose img {
+    width: .61rem;
+    height: .87rem;
+    margin-top: .05rem;
+}
+.sec-1 .chouJiang-inner .choose p {
+    width: 100%;
+    font-size: .26rem;
+    color: #0b6f72;
+    margin-top: .05rem;
+}
+.sec-1 .chouJiang-inner .mid-choose {
+    background: #ffe800;
+    box-shadow: inset 0 -0.14rem #f79b02;
+}
+    /*第一部分圆点部分*/
+.sec-1 .circle {
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+}
+.sec-1 .circle i {
+    display: inline-block;
+    font-size: 0;
+    width: 0.18rem;
+    height: 0.18rem;
+    border-radius: 50%;
+    box-shadow: 0 0.05rem 0.05rem;
+    margin-right: 0.58rem;
+    margin-top: 0.04rem;
+}
+.sec-1 .circle i:nth-child(2n+1) {
+    animation: circleColor .8s linear .4s forwards infinite;
+}
+.sec-1 .circle i:nth-child(2n) {
+    animation: circleColor .8s linear forwards infinite;
+}
+@keyframes circleColor {
+    from {
+        background: #20ab68;
+    }
+    to {
+        background: #cff79f;
+    }
+}
+.sec-1 .circle-bottom {
+    bottom: 0;
+}
+     /*第一部分，左边圆点特有样式*/
+.sec-1 .circle-left {
+    top: 60%;
+    left: -47.8%;
+    transform: rotate(90deg);
+}
+.sec-1 .circle-left i{
+    box-shadow: 0.05rem 0 0.05rem;
+    margin-right: 0.64rem;
+}
+.sec-1 .circle-left i:first-child {
+    display: none;
+}
+    /*第一部分，右边圆点特有样式*/
+.sec-1 .circle-right {
+    top: 35%;
+    right: -47.8%;
+    transform: rotate(-90deg);
+}
+.sec-1 .circle-right i{
+    box-shadow: -0.05rem 0 0.05rem;
+    margin-right: 0.64rem;
+}
+    /*第一部分，上边圆点特有样式*/
+.sec-1 .circle-top,
+.sec-1 .circle-bottom{
+   left: .56rem;
+}
