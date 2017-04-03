@@ -1,4 +1,3 @@
-/*ç¬¬ä¸€éƒ¨åˆ†*/
 .sec-1 {
     background: url("../images/bg-1.jpg") no-repeat;
     background-size: 100% 100%;
@@ -36,7 +35,7 @@
 }
     /*第一部分的抽奖模块--外面部分*/
 .sec-1 .chouJiang-out {
-    background: url("../images/抽奖背景.png") no-repeat;
+    background: url("../images/chouJiang.png") no-repeat;
     background-size: 6.97rem 6.47rem;
     width: 6.97rem;
     height: 6.47rem;
